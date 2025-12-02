@@ -9,6 +9,9 @@ footer {
     line-height: 30px;
     background-color: #9C9C9C;
     font-size: small;
-    text-align: center;
     border-radius: 25px;
+
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
 }
