@@ -1,11 +1,17 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
    <script type="text/javascript" src='script.js'></script>
+   <link rel="stylesheet" href="styles.css">
    <title>Dyegas Site</title>
 </head>
 <body>
-    <h1>Welcome to my&emsp;&emsp;&emsp;&emsp;website!!!!</h1><br>
+    <h1>Welcome to my <span style="color:white;">AWESOME</span> website!!!!</h1><br>
+    I am 
+  <span id="myage"></span>
+     years old <span style="opacity:0.2;"><br>(according to your current date)</span>
+
+  <script> document.getElementById("myage").innerHTML = getAge("2007-09-25"); </script><br>
   <hr>
     <p><a href="https://www.x.com/Lored_bore">my twitter</a></p>
     <p><a href="secret">do NOT click this</a></p>
@@ -13,15 +19,9 @@
     Sick video:<br>
       <iframe width="420" height="315" src="https://www.youtube.com/embed/RZ_0ImDYrPY?autoplay=1&mute=1&loop=1">
       </iframe>
-  <br>
-    I am 
-  <span id="myage"></span>
-     years old <span style="opacity:0.2;">(according to your current date)</span>
-
-  <script> document.getElementById("myage").innerHTML = getAge("2007-09-25"); </script><br>
-
+    <br>
     <hr>
-    <footer style="background-color:#9C9C9C;">
+    <footer>
         Last updated: 02/12/2025 <span style="opacity:0.5;">(dd/mm/yyyy)</span>
     </footer>
 </body>
