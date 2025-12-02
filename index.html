@@ -1,21 +1,35 @@
 <!doctype html>
 <html>
 <body>
-    <h1>Welcome to my          website!!!!</h1><br>
+    <h1>Welcome to my&emsp;&emsp;&emsp;&emsp;website!!!!</h1><br>
   <hr>
-    <a href="https://www.x.com/Lored_bore">my twitter</a><br>
-      <a href="https://www.youtube.com/ImDigas">my Youtube</a>
-    <p>Discord handle: ImDigas</p>
+    <p><a href="https://www.x.com/Lored_bore">my twitter</a><br></p>
     Sick video:<br>
       <iframe width="420" height="315"
-      src="https://www.youtube.com/embed/RZ_0ImDYrPY" mute=1 autoplay=1>
+      src="https://www.youtube.com/embed/RZ_0ImDYrPY?autoplay=1&mute=1&loop=1">
     </iframe>
   <br>
-    1+1= 
+    I am 
   <span id="output"></span>
+     years old <span style="opacity:0.2;">(according to your current date)</span>
   <script>
-      document.getElementById("output").textContent = (1+1);
-      console.log(1+1)
+      const dat = new Date();
+      const day = dat.getDate();
+      const month = dat.getMonth();
+      const year = dat.getFullYear();
+
+      const myDat = new Date("2007-09-25");
+      const myDay = myDat.getDate();
+      const myMonth = myDat.getMonth();
+      const myYear = myDat.getFullYear();
+
+      var mybirth = year-myYear;
+
+      if (month < myMonth || (month === myMonth && day < myDay)) {
+	  mybirth -= 1;
+      }
+
+      document.getElementById("output").textContent = mybirth;
   </script>
     <br>
     <hr>
